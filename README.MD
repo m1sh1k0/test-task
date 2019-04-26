@@ -10,7 +10,7 @@ Depending on job title applied it could be `Graphic User Interface(GUI)` *(front
 
 1. Simple SSO authentication using [Auth0](https://auth0.com/docs)
 
-2. Fetch the list of cities and sort it by population.
+2. Fetch the list of countries and sort it by population.
 
 3. **Optional.** Make your own interesting and/or useful feature based on REST COUNTRIES API.
 
