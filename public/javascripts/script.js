@@ -33,13 +33,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     var listItem = document.createElement('li');
                     var text = document.createElement('span');
                     var img = document.createElement('img');
+                    var pop = document.createElement('population');
                     img.src = item.flag;
                     img.className = "flag";
+                    pop.className = "pop";
                     text.textContent = item.name;
+                    pop.textContent = item.population;
                     listItem.appendChild(img);
                     listItem.appendChild(text);
+                    listItem.appendChild(pop);
                     document.getElementById('list').appendChild(listItem);
+
                 });
+
                 console.log(data);
             })
             .catch(function(error) {

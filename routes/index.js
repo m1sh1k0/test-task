@@ -37,6 +37,11 @@ router.get('/countries', checkSession.isLoggedIn, function(req, res) {
 
     resp.on('end', () => {
       var json = JSON.parse(data);
+      json = json.sort(
+          function (a, b) {
+            return b.population - a.population
+          }
+      );
       res.json(json);
     });
 
